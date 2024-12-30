@@ -4,9 +4,9 @@ metadata:
   name: rust_jenkins_test
   annotations:
     # github.com/project-slug: ettore26/rust_jenkins_test
-    jenkins.io/job-full-name: "rust_jenkins_test_pipeline_single"
     # jenkins.io/job-full-name: "rust_jenkins_test_pipeline_organization/rust_jenkins_test"
-    # jenkins.io/job-full-name: "organization_test/rust_jenkins_test"
+    # jenkins.io/job-full-name: "rust_jenkins_test_pipeline_single"
+    jenkins.io/job-full-name: "organization_test/rust_jenkins_test"
 spec:
   type: service
   lifecycle: experimental
