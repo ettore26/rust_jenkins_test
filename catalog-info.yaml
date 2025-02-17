@@ -6,7 +6,8 @@ metadata:
     # github.com/project-slug: ettore26/rust_jenkins_test
     # jenkins.io/job-full-name: "rust_jenkins_test_pipeline_organization/rust_jenkins_test"
     # jenkins.io/job-full-name: "rust_jenkins_test_pipeline_single"
-    jenkins.io/job-full-name: "snyk/organization_test/rust_jenkins_test"
+    # jenkins.io/job-full-name: "snyk/organization_test/rust_jenkins_test"
+    backstage.io/kubernetes-id: "api-bancos-vantrust"
 spec:
   type: service
   lifecycle: experimental
