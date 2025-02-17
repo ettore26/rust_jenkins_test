@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: rust_jenkins_test
   annotations:
-    'backstage.io/kubernetes-namespace': backstage
+    backstage.io/kubernetes-namespace: backstage
 spec:
   type: service
   lifecycle: experimental
