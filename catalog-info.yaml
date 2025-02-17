@@ -1,10 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: api-integracion-bancos
+  name: rust_jenkins_test
   annotations:
     'backstage.io/kubernetes-namespace': backstage
 spec:
   type: service
-  lifecycle: production
+  lifecycle: experimental
   owner: guests
