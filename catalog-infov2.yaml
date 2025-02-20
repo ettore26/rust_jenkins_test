@@ -2,7 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: topology
-  description: TODO
+  annotations:
+    backstage.io/kubernetes-id: "users-api"
 spec:
   type: backstage-plugin
   lifecycle: experimental
