@@ -3,13 +3,21 @@ kind: Component
 metadata:
   name: rust_jenkins_test
   annotations:
-    # github.com/project-slug: ettore26/rust_jenkins_test
-    # jenkins.io/job-full-name: "rust_jenkins_test_pipeline_organization/rust_jenkins_test"
-    # jenkins.io/job-full-name: "rust_jenkins_test_pipeline_single"
-    # jenkins.io/job-full-name: "snyk/organization_test/rust_jenkins_test"
     backstage.io/kubernetes-id: "users-api"
     backstage.io/kubernetes-connects-to: "orders-api"
 spec:
   type: service
   lifecycle: experimental
-  owner: guests
+  owner:  guests
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: rust_jenkins_test
+  annotations:
+    backstage.io/kubernetes-id: "orders-api"
+    backstage.io/kubernetes-connects-to: "users-api"
+spec:
+  type: service
+  lifecycle: experimental
+  owner:  guests
