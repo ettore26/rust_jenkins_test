@@ -5,8 +5,6 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: "users-api"
     backstage.io/kubernetes-connects-to: "orders-api"
-    backstage.io/kubernetes-id: "orders-api"
-    backstage.io/kubernetes-connects-to: "users-api"
 spec:
   type: service
   lifecycle: experimental
