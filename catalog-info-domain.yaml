@@ -1,9 +1,14 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Domain
 metadata:
-  name: rust_jenkins_test
-  annotations:
-    backstage.io/kubernetes-id: "users-api"
+  name: audio
+  description: Everything related to audio
+  links:
+    - url: http://example.com/domain/audio/
+      title: Domain Readme
+    - url: http://example.com/domains/audio/dashboard
+      title: Domain Metrics Dashboard
+      icon: dashboard
 spec:
   type: backstage-plugin
   lifecycle: experimental
