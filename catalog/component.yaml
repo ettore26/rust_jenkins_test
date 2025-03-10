@@ -7,5 +7,6 @@ metadata:
     - java
 spec:
   type: service
-  owner: Teams Core
+  lifecycle: experimental
+  owner:  guests
   system: OAPI
