@@ -5,6 +5,7 @@ metadata:
   description: Repositorio semilla para microservicios utilizando SpringBoot
   tags:
     - java
+    - CAT
 spec:
   type: service
   lifecycle: experimental
