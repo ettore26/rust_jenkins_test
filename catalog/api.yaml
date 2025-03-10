@@ -3,6 +3,9 @@ kind: API
 metadata:
   name: businessapi-qa
   description: API de Recaudaciones
+  tags:
+    - CAT
+    - API
   links:
     - url: https://businessapi-qa.rfsc.cl/api/v1.0/recaudaciones/intentos-pago 
       title: URL API
