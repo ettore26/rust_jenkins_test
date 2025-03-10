@@ -5,4 +5,5 @@ metadata:
   description: Base de datos que soporta el recurso
 spec:
   type: database
-  owner: Team Core
+  lifecycle: experimental
+  owner:  guests
