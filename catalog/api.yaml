@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: businessapi-qa
+  description: API de Recaudaciones
+  links:
+    - url: https://businessapi-qa.rfsc.cl/api/v1.0/recaudaciones/intentos-pago 
+      title: URL API
+      icon: github
+    - url: https://kong-devportal-businessapi-ab.rfsc.cl/businessapi-qa/documentation/ms-recaudacion-core
+      title: URL API Kong
+      icon: code
+spec:
+  type: openapi
+  owner: Teams Core
