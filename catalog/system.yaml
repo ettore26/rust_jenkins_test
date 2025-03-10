@@ -4,5 +4,6 @@ metadata:
   name: OAPI
   description: Proyecto de OAPI
 spec:
-  owner: Teams OAPI
+  lifecycle: experimental
+  owner:  guests
   type: feature-set
