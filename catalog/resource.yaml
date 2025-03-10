@@ -4,8 +4,7 @@ metadata:
   name: air-ab-pg 
   description: Base de datos que soporta el recurso
   tags:
-    - CAT
-    - API
+    - cat
 spec:
   type: database
   lifecycle: experimental
