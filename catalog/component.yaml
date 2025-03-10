@@ -4,8 +4,7 @@ metadata:
   name: ms-recaudacion-core
   description: Repositorio semilla para microservicios utilizando SpringBoot
   tags:
-    - java
-    - CAT
+    - cat
 spec:
   type: service
   lifecycle: experimental
