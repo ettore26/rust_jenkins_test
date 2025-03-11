@@ -9,5 +9,7 @@ spec:
   type: service
   lifecycle: experimental
   dependsOn: ['resource:air-ab-pg']
+  providesApis:
+    - businessapi-qa
   owner:  guests
   system: OAPI
