@@ -8,5 +8,6 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
+  dependsOn: ['resource:air-ab-pg']
   owner:  guests
   system: OAPI
