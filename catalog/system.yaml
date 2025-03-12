@@ -1,12 +1,11 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
+kind: System
 metadata:
-  name: air-ab-pg 
-  description: Base de datos que soporta el recurso
+  name: OAPI
+  description: Proyecto de OAPI
   tags:
     - cat
 spec:
-  type: database
+  owner: guests
+  type: feature-set
   lifecycle: experimental
-  owner:  guests
-  system: OAPI
