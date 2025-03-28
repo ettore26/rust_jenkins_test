@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: payment-processor
+  description: External payment processing system that handles transactions
+  annotations:
+    backstage.io/managed-by: payment-infrastructure-team
+  tags:
+    - payment
+    - external
+    - critical
+  links:
+    - url: http://example.com/resources/payment-processor/
+      title: Resource Documentation
+    - url: http://example.com/resources/payment-processor/dashboard
+      title: Performance Dashboard
+      icon: dashboard
+    - url: http://example.com/resources/payment-processor/api-docs
+      title: API Documentation
+      icon: code
+spec:
+  type: payment-gateway
+  lifecycle: production
+  owner: payment-infrastructure-team
+  system: e-commerce
+  providesApis:
+    - payment-processing-api
+  consumedBy:
+    - component:checkout-service

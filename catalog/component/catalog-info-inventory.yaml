@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: inventory-service
+  description: Service managing product inventory and stock levels
+  annotations:
+    backstage.io/managed-by: users
+  links:
+    - url: http://example.com/services/inventory/
+      title: Service Documentation
+    - url: http://example.com/services/inventory/dashboard
+      title: Service Metrics Dashboard
+      icon: dashboard
+    - url: http://example.com/services/inventory/api-docs
+      title: API Documentation
+      icon: code
+spec:
+  type: service
+  lifecycle: production
+  owner: inventory-team
+  system: e-commerce
+  providesApis:
+    - inventory-api
+  dependsOn:
+    - resource:product-database
+  consumedBy:
+    - component:checkout-service

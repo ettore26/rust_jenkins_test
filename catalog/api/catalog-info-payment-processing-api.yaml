@@ -1,0 +1,69 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: payment-processing-api
+  description: API for processing payment transactions
+  annotations:
+    backstage.io/managed-by: payment-infrastructure-team
+  tags:
+    - payment
+    - rest
+    - secure
+  links:
+    - url: http://example.com/apis/payment-processing/
+      title: API Documentation
+    - url: http://example.com/apis/payment-processing/swagger
+      title: Swagger UI
+      icon: code
+    - url: http://example.com/apis/payment-processing/status
+      title: API Status
+      icon: dashboard
+spec:
+  type: openapi
+  lifecycle: production
+  owner: payment-infrastructure-team
+  system: e-commerce
+  definition:
+    $text: |
+      openapi: 3.0.0
+      info:
+        title: Payment Processing API
+        description: API for processing payments and handling transactions
+        version: 1.0.0
+      paths:
+        /payments:
+          post:
+            summary: Create a new payment
+            requestBody:
+              required: true
+              content:
+                application/json:
+                  schema:
+                    type: object
+                    required:
+                      - amount
+                      - currency
+                      - paymentMethod
+                    properties:
+                      amount:
+                        type: number
+                      currency:
+                        type: string
+                      paymentMethod:
+                        type: object
+            responses:
+              '200':
+                description: Successful payment
+                content:
+                  application/json:
+                    schema:
+                      type: object
+                      properties:
+                        transactionId:
+                          type: string
+                        status:
+                          type: string
+  providedBy: 
+    - resource:payment-processor
+  consumedBy:
+    - component:checkout-service
