@@ -1,15 +1,30 @@
 apiVersion: backstage.io/v1alpha1
-kind: System 
+kind: System
 metadata:
-  name: audio
-  description: Everything related to audio
+  name: e-commerce-platform
+  description: E-commerce platform handling product listings, inventory, and checkout processes
+  tags:
+    - e-commerce
+    - platform
+    - business-critical
   links:
-    - url: http://example.com/domain/audio/
-      title: Domain Readme
-    - url: http://example.com/domains/audio/dashboard
-      title: Domain Metrics Dashboard
+    - url: http://example.com/systems/e-commerce/
+      title: System Documentation
+    - url: http://example.com/systems/e-commerce/architecture
+      title: Architecture Diagram
+    - url: http://example.com/systems/e-commerce/dashboard
+      title: System Dashboard
       icon: dashboard
 spec:
-  type: backstage-plugin
-  lifecycle: experimental
-  owner: guests
+  type: system
+  lifecycle: production
+  owner: e-commerce-platform-team
+  domain: sales
+  components:
+    - component:checkout-service
+    - component:inventory-service
+  providesApis:
+    - payment-processing-api
+  dependsOn:
+    - resource:payment-processor
+
