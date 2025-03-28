@@ -26,10 +26,4 @@ spec:
   consumesApis:
     - payment-processing-api
   part-of: e-commerce-platform
-  dependsOn:
-    - resource:payment-processor
-    - component:inventory-service
-  consumesApis:
-    - payment-processing-api
-  part-of: e-commerce-platform
 
