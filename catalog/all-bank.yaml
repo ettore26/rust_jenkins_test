@@ -7,7 +7,6 @@ metadata:
     - e-commerce
     - platform
 spec:
-  type: system
   targets:
     - ./system/catalog-info-payment.yaml
     - ./component/catalog-info-checkout.yaml
