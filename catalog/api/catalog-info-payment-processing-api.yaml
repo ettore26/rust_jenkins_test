@@ -24,46 +24,9 @@ spec:
   owner: payment-infrastructure-team
   system: e-commerce
   definition:
-    $text: |
-      openapi: 3.0.0
-      info:
-        title: Payment Processing API
-        description: API for processing payments and handling transactions
-        version: 1.0.0
-      paths:
-        /payments:
-          post:
-            summary: Create a new payment
-            requestBody:
-              required: true
-              content:
-                application/json:
-                  schema:
-                    type: object
-                    required:
-                      - amount
-                      - currency
-                      - paymentMethod
-                    properties:
-                      amount:
-                        type: number
-                      currency:
-                        type: string
-                      paymentMethod:
-                        type: object
-            responses:
-              '200':
-                description: Successful payment
-                content:
-                  application/json:
-                    schema:
-                      type: object
-                      properties:
-                        transactionId:
-                          type: string
-                        status:
-                          type: string
+    $text: ./payment-processing-api.oas.yaml
   providedBy: 
     - resource:payment-processor
   consumedBy:
     - component:checkout-service
+

@@ -1,15 +1,35 @@
 apiVersion: backstage.io/v1alpha1
-kind: Domain
+kind: Component
 metadata:
-  name: audio
-  description: Everything related to audio
+  name: checkout-service
+  description: Service handling customer checkout process
+  annotations:
+    backstage.io/managed-by: users
+  tags:
+    - e-commerce
+    - checkout
+    - customer-facing
   links:
-    - url: http://example.com/domain/audio/
-      title: Domain Readme
-    - url: http://example.com/domains/audio/dashboard
-      title: Domain Metrics Dashboard
+    - url: http://example.com/services/checkout/
+      title: Service Documentation
+    - url: http://example.com/services/checkout/dashboard
+      title: Service Metrics Dashboard
       icon: dashboard
 spec:
-  type: backstage-plugin
-  lifecycle: experimental
-  owner: guests
+  type: service
+  lifecycle: production
+  owner: checkout-team
+  system: e-commerce
+  dependsOn:
+    - resource:payment-processor
+    - component:inventory-service
+  consumesApis:
+    - payment-processing-api
+  part-of: e-commerce-platform
+  dependsOn:
+    - resource:payment-processor
+    - component:inventory-service
+  consumesApis:
+    - payment-processing-api
+  part-of: e-commerce-platform
+
