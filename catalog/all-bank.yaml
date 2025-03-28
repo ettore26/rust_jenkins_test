@@ -9,19 +9,9 @@ metadata:
 spec:
   type: system
   targets:
-    # System definition
     - ./system/catalog-info-payment.yaml
-    
-    # Components
     - ./component/catalog-info-checkout.yaml
     - ./component/catalog-info-inventory.yaml
-    
-    # Resources
     - ./resources/catalog-info-payment-processor.yaml
-    
-    # APIs
     - ./api/catalog-info-payment-processing-api.yaml
-    
-  # Optional additional references to other locations
-  # dependsOn:
-  #   - ./other-systems/other-location.yaml
+
