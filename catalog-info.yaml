@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: rust_jenkins_test
   annotations:
-    jenkins.io/job-full-name: "snyk/organization_test/rust_jenkins_test"
+    jenkins.io/job-full-name: "organization_test/rust_jenkins_test"
     backstage.io/kubernetes-id: "users-api"
     backstage.io/kubernetes-connects-to: "orders-api"
 spec:
