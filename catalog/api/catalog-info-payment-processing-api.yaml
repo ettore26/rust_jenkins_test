@@ -26,7 +26,7 @@ spec:
   definition:
     $text: ./payment-processing-api.oas.yaml
   providedBy: 
-    - resource:payment-processor
+    - resource:payment-database
   consumedBy:
     - component:checkout-service
 

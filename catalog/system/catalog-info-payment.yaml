@@ -26,5 +26,5 @@ spec:
   providesApis:
     - payment-processing-api
   dependsOn:
-    - resource:payment-processor
+    - resource:payment-database
 

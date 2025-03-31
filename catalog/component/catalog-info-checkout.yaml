@@ -21,7 +21,7 @@ spec:
   owner: guests
   system: payment-platform
   dependsOn:
-    - resource:payment-processor
+    - resource:payment-database
     - component:inventory-service
     - component:refund-service
   consumesApis:

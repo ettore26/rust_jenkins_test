@@ -22,7 +22,7 @@ spec:
   providesApis:
     - refund-service-api
   dependsOn:
-    - resource:product-database
+    - resource:payment-database
   consumedBy:
     - component:checkout-service
 
