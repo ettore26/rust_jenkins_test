@@ -1,10 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: e-commerce-platform-components
-  description: Collection of all e-commerce platform components
+  name: payment-platform-components
+  description: Collection of all payment platform components
   tags:
-    - e-commerce
+    - payment-platform
     - platform
 spec:
   targets:

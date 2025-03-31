@@ -4,15 +4,15 @@ metadata:
   name: payment-platform
   description: Payment platform handling product listings, inventory, and checkout processes
   tags:
-    - e-commerce
+    - payment-platform
     - platform
     - business-critical
   links:
-    - url: http://example.com/systems/e-commerce/
+    - url: http://example.com/systems/payment-platform/
       title: System Documentation
-    - url: http://example.com/systems/e-commerce/architecture
+    - url: http://example.com/systems/payment-platform/architecture
       title: Architecture Diagram
-    - url: http://example.com/systems/e-commerce/dashboard
+    - url: http://example.com/systems/payment-platform/dashboard
       title: System Dashboard
       icon: dashboard
 spec:
