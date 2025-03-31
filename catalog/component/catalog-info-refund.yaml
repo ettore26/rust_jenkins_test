@@ -25,3 +25,4 @@ spec:
     - resource:product-database
   consumedBy:
     - component:checkout-service
+

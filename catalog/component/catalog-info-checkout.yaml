@@ -23,7 +23,7 @@ spec:
   dependsOn:
     - resource:payment-processor
     - component:inventory-service
-    - component:checkout-service
+    - component:refund-service
   consumesApis:
     - payment-processing-api
 
