@@ -6,7 +6,7 @@ metadata:
   annotations:
     backstage.io/managed-by: users
   tags:
-    - e-commerce
+    - payment-platform
     - checkout
     - customer-facing
   links:
@@ -18,12 +18,11 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: checkout-team
-  system: e-commerce
+  owner: guests
+  system: payment-platform
   dependsOn:
     - resource:payment-processor
     - component:inventory-service
   consumesApis:
     - payment-processing-api
-  part-of: e-commerce-platform
 

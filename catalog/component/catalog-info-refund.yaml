@@ -1,17 +1,17 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: inventory-service
-  description: Service managing product inventory and stock levels
+  name: refund-service
+  description: Service managing payment refunds
   annotations:
     backstage.io/managed-by: users
   links:
-    - url: http://example.com/services/inventory/
+    - url: http://example.com/services/refund-service/
       title: Service Documentation
-    - url: http://example.com/services/inventory/dashboard
+    - url: http://example.com/services/refund-service/dashboard
       title: Service Metrics Dashboard
       icon: dashboard
-    - url: http://example.com/services/inventory/api-docs
+    - url: http://example.com/services/refund-service/api-docs
       title: API Documentation
       icon: code
 spec:
@@ -20,7 +20,7 @@ spec:
   owner: guests
   system: payment-platform
   providesApis:
-    - inventory-api
+    - refund-service-api
   dependsOn:
     - resource:product-database
   consumedBy:

@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: e-commerce-platform
-  description: E-commerce platform handling product listings, inventory, and checkout processes
+  name: payment-platform
+  description: Payment platform handling product listings, inventory, and checkout processes
   tags:
     - e-commerce
     - platform
@@ -18,7 +18,7 @@ metadata:
 spec:
   type: system
   lifecycle: production
-  owner: e-commerce-platform-team
+  owner: guests
   domain: sales
   components:
     - component:checkout-service

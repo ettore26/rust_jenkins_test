@@ -21,8 +21,8 @@ metadata:
 spec:
   type: payment-gateway
   lifecycle: production
-  owner: payment-infrastructure-team
-  system: e-commerce
+  owner: guests
+  system: payment-platform
   providesApis:
     - payment-processing-api
   consumedBy:
