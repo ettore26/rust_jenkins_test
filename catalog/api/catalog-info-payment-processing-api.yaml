@@ -4,7 +4,7 @@ metadata:
   name: payment-processing-api
   description: API for processing payment transactions
   annotations:
-    backstage.io/managed-by: payment-infrastructure-team
+    backstage.io/managed-by: guests
   tags:
     - payment
     - rest
