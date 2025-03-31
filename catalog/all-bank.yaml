@@ -11,6 +11,7 @@ spec:
     - ./system/catalog-info-payment.yaml
     - ./component/catalog-info-checkout.yaml
     - ./component/catalog-info-inventory.yaml
+    - ./component/catalog-info-refund.yaml
     - ./resources/catalog-info-payment-processor.yaml
     - ./api/catalog-info-payment-processing-api.yaml
 
